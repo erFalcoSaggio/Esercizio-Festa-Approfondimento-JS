@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esercizio Festa</title>
+  <!-- jsPDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>Esercizio Festa</header>
+
+  <label for="element">Inserisci un elemento</label>
+  <input type="text" name="element" id="element">
+  <label for="prezzo">Prezzo</label>
+  <input type="number" name="prezzo" id="prezzo">
+  <label for="quantity">Quantità</label>
+  <input type="number" name="quantity" id="quantity">
+  <label for="sconto">Sconto</label>
+  <input type="number" name="sconto" id="sconto">
+
+  <button onclick="toArray ()">Inserisci</button>
+  <!-- <button onclick="showBtn ()">Visualizza lista</button> -->
+
+  <select name="lista-select" id="lista-select">
+    <!-- qua option creati dal js -->
+  </select>
+
+  <button onclick="remove ()">Rimuovi elemento</button>
+  <button onclick="modifyQuantity ()">Modifica la quantità</button>
+  <label for="modQuantity">Modifica quantità</label>
+  <input type="number" name="modQuantity" id="modQuantity">
+  
+  <!-- budget -->
+  <label for="budget">Budget (Non hai budget? Inserisci 0)</label>
+  <input type="number" name="budget" id="budget">
+
+  <!-- totale -->
+  <button onclick="totale ()">Calcola</button>
+
+  <!-- jsPDF -->
+  <button id="pdf-btn" onclick="creaPDF ()">Scarica il PDF</button>
+
+  <footer>
+    <p>© 2025 Falcari Alessandro. All rights reserved. <a href="https://github.com/falcoale">GitHub</a></p>
+  </footer> 
+</body>
+</html>
